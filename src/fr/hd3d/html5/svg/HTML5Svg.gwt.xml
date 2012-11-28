@@ -1,0 +1,12 @@
+<module>
+	<inherits name="com.google.gwt.user.User" />
+	<inherits name="com.google.gwt.user.theme.standard.Standard" />
+	<replace-with class="fr.hd3d.html5.svg.dom.SVGElement">
+		<when-type-is class="fr.hd3d.html5.svg.dom.SVGElementIE6" />
+		<when-property-is name="user.agent" value="ie6" />
+	</replace-with>
+	<replace-with class="fr.hd3d.html5.svg.dom.SVGDomHelper">
+		<when-type-is class="fr.hd3d.html5.svg.dom.SVGDomHelperIE6" />
+		<when-property-is name="user.agent" value="ie6" />
+	</replace-with>
+</module>
